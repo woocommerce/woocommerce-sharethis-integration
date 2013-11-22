@@ -1,21 +1,5 @@
 <?php
 
-/*
-Plugin Name: WooCommerce ShareThis Integration
-Description: Provides the integration between WooCommerce and ShareThis.
-Author: Coen Jacobs
-Author URI: http://coenjacobs.me
-Version: 0.1
-*/
-
-// Add the integration to WooCommerce
-function add_sharethis_integration( $integrations ) {
-	$integrations[] = 'WC_ShareThis';
-	return $integrations;
-}
-
-add_filter('woocommerce_integrations', 'add_sharethis_integration' );
-
 /**
  * ShareThis Integration
  *
